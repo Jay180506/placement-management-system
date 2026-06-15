@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Job</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="/">
+      Placement Management System
+    </a>
+
+  </div>
+</nav>
+
+<br>
+<h1>Edit Job</h1>
+
+<form method="POST">
+
+    Company:
+    <input type="text"
+           name="company_name"
+           value="{{ job[1] }}">
+    <br><br>
+
+    Role:
+    <input type="text"
+           name="job_role"
+           value="{{ job[2] }}">
+    <br><br>
+
+    Package:
+    <input type="text"
+           name="package_lpa"
+           value="{{ job[3] }}">
+    <br><br>
+
+    CGPA:
+    <input type="text"
+           name="eligibility_cgpa"
+           value="{{ job[4] }}">
+    <br><br>
+
+    Deadline:
+    <input type="date"
+           name="deadline"
+           value="{{ job[5] }}">
+    <br><br>
+
+    <button type="submit">
+        Update Job
+    </button>
+
+</form>
+
+</body>
+</html>
